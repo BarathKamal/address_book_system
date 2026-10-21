@@ -10,3 +10,6 @@
 
 ### Use Case 1: Create Contact in Address Book
 Contacts can be created with the respective attributes in the address book system
+
+### Use Case 2: Add Contact to Address Book
+Accepts creation of new contacts and adds them to the address book
