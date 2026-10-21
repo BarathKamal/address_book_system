@@ -24,3 +24,6 @@ If the contact is not found, no deletion is performed.
 
 ### Use Case 5: Manage multiple contacts
 Enables users to add and maintain multiple contacts in an address book using a Java Collection (ArrayList)
+
+### Use Case 6: Manage Multiple Address Books
+Enables users to create multiple uniquely named address books and manage contacts separately in each address book
