@@ -32,7 +32,26 @@ public class Contact {
         this.email = email;
     }
 
-    // method to display the contact information
+    // UC3: Ability to edit existing contact person using their name
+    // Checks whether both names match the contact.
+    public boolean matchesName(String firstName, String lastName) {
+        return this.firstName.equalsIgnoreCase(firstName)
+                && this.lastName.equalsIgnoreCase(lastName);
+    }
+
+    // Updates all editable contact details.
+    public void updateContact(String address, String city,
+                              String state, String zip,
+                              String phoneNumber, String email) {
+        this.address = address;
+        this.city = city;
+        this.state = state;
+        this.zip = zip;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+    }
+
+    // Displays the contact information
     public void displayContact() {
         System.out.println("\n--- Contact Details ---");
         System.out.println("Name: " + firstName + " " + lastName);
