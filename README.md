@@ -21,3 +21,6 @@ If the contact is not found, no editing is performed.
 ### Use Case 4: Delete Contact by Name
 Allows users to delete an existing contact by searching for the person's name through the console. 
 If the contact is not found, no deletion is performed.
+
+### Use Case 5: Manage multiple contacts
+Enables users to add and maintain multiple contacts in an address book using a Java Collection (ArrayList)
