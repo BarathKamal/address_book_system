@@ -46,6 +46,27 @@ public class AddressBookMain {
         addressBook.displayContact();
     }
 
+    // UC4: Ability to delete a person using person's name
+    // Deletes the contact only if the name matches.
+    public static void deleteContact(Scanner scanner, AddressBook addressBook) {
+        System.out.println("\n--- Delete Contact ---");
+
+        System.out.print("Enter first name: ");
+        String firstName = scanner.nextLine();
+
+        System.out.print("Enter last name: ");
+        String lastName = scanner.nextLine();
+
+        if (!addressBook.hasContact(firstName, lastName)) {
+            System.out.println("Contact not found. No deletion performed.");
+            return;
+        }
+
+        addressBook.deleteContact();
+        System.out.println("Contact deleted successfully!");
+    }
+
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         AddressBook addressBook = new AddressBook();
@@ -85,6 +106,8 @@ public class AddressBookMain {
         addressBook.displayContact();
 
         editContact(scanner, addressBook);
+
+        deleteContact(scanner, addressBook);
 
         scanner.close();
     }

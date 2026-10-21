@@ -27,6 +27,13 @@ public class AddressBook {
 
     }
 
+
+    // UC4: Ability to delete a person using person's name
+    // Removes the contact from the address book.
+    public void deleteContact() {
+        contact = null;
+    }
+
     // Displays the contact information
     public void displayContact() {
         if (contact != null) {
