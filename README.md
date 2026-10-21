@@ -13,3 +13,6 @@ Contacts can be created with the respective attributes in the address book syste
 
 ### Use Case 2: Add Contact to Address Book
 Accepts creation of new contacts and adds them to the address book
+
+### Use Case 3 – Edit Contact using Name
+Allows users to search for an existing contact by name and update their personal and address details
