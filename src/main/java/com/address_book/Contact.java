@@ -32,6 +32,11 @@ public class Contact {
         this.email = email;
     }
 
+    // Returns the contact's full name.
+    public String getFullName() {
+        return firstName + " " + lastName;
+    }
+
     // UC3: Ability to edit existing contact person using their name
     // Checks whether both names match the contact.
     public boolean matchesName(String firstName, String lastName) {
